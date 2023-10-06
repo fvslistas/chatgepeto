@@ -1,0 +1,1 @@
+docker build -t fvslistas/chatgepeto:0 .

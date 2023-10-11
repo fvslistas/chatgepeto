@@ -1,11 +1,17 @@
 FROM python:3
 
-RUN pip install --upgrade pip
-RUN pip install numpy
-RUN pip install pandas
-RUN pip install matplotlib
-RUN pip install jupyterlab
-RUN pip install plotly
+RUN pip3 install --upgrade pip
+RUN pip3 install numpy
+RUN pip3 install pandas
+RUN pip3 install matplotlib
+RUN pip3 install jupyterlab
+RUN pip3 install plotly
+
+RUN pip3 install transformers
+RUN pip3 install datasets
+RUN pip3 install tensorflow
+
+RUN pip3 install torch
 
 CMD ["jupyter-lab", "--ip=0.0.0.0", "--no-browser", "--allow-root"]
 
